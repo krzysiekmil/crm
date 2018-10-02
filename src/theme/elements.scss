@@ -1,0 +1,12 @@
+.spinner-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  > ion-spinner {
+    height: 50%;
+    width: 35%;
+    margin: auto;
+  }
+}

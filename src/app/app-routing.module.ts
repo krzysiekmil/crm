@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+    {path: '', redirectTo: 'loading', pathMatch: 'full'},
   { path: 'home', loadChildren: './home/home.module#HomePageModule' },
   { path: 'header', loadChildren: './header/header.module#HeaderPageModule' },
   { path: 'tabs', loadChildren: './tabs/tabs.module#TabsPageModule' },
