@@ -1,0 +1,13 @@
+ion-content {
+  background: #dcdcdc80;
+}
+
+ion-header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  > .company-logo {
+    height: 150px;
+    width: 150px;
+  }
+}
