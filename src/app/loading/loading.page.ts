@@ -12,10 +12,15 @@ export class LoadingPage implements OnInit {
     }
 
   ngOnInit() {
-      // setTimeout(() => {
-      //     return this.router.navigateByUrl('/login');
-      // }, 4500);
-
+      if (Math.floor(Math.random() * 6) % 2) {
+          setTimeout(() => {
+              return this.router.navigateByUrl('/login');
+          }, 4500);
+      } else {
+          setTimeout(() => {
+              this.router.navigateByUrl('/login');
+          }, 3500);
+      }
   }
 }
 

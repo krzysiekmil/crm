@@ -1,5 +1,7 @@
+@import "../../theme/variables.scss";
+
 ion-content {
-  background: #dcdcdc80;
+  background: $color-background-primary;
 }
 
 ion-header {
