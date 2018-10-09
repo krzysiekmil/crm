@@ -1,9 +1,21 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content padding>
-
+<ion-content>
+    <div class="logo-container">
+        <img src="assets/logo/logo.png" class="company-logo">
+    </div>
+    <div class="form-container">
+        <ion-card padding margin>
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <ion-item margin padding-bottom>
+                    <ion-label position="stacked">Login</ion-label>
+                    <ion-input formControlName="login"></ion-input>
+                </ion-item>
+                <ion-item margin padding-bottom>
+                    <ion-label position="stacked">Hasło</ion-label>
+                    <ion-input type="password" formGroupName="password"></ion-input>
+                </ion-item>
+                <ion-button expand="full" shape="round" [disabled]="!loginForm.valid" margin-top type="submit">Zaloguj
+                </ion-button>
+            </form>
+        </ion-card>
+    </div>
 </ion-content>

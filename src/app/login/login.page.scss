@@ -1,0 +1,18 @@
+ion-content {
+  background: #c3bfff30;
+  > .form-container {
+    > ion-card {
+      background: white;
+    }
+  }
+  > .logo-container {
+    background: white;
+    border-bottom: 1px solid gainsboro;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+}
+
+
+
